@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Club Yelp</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+            <li class="menu-text"><h2><%= link_to 'Codiggers', posts_path %></h2></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Write a Review</a></li>
+                <li><a href="#">Find Friends</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Talk</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+                <ul class="menu">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <h6>Username</h6>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <h6>Password</h6>
+                    <input type="email" class="form-control" placeholder="**********">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </form>
+            </ul>
+        </div>
+</div>
+    
+<div class="callout large primary">
+<div class="row column text-right">
+<h1>Club Yelp</h1>
+<h2 class="subheader">Codiggers</h2>
+</div>
+    </div>
+
+<%= yield %>
+    
+</body>
+</html>
