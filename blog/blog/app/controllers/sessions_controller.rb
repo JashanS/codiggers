@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+	skip_before_action :authorize
   def new
   end
 
@@ -13,5 +14,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+  	sessions[:user_id] = nil
+  	redirect_to login_url , alert:"Successfully logged out"
   end
 end
