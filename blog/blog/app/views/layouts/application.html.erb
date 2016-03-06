@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Club Yelp</title>
+    <title>ClubHub</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= stylesheet_link_tag  "style" %>
@@ -10,38 +10,53 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style>
-        .margins{
-            margin-left:120px;
-            float:left;
-        }
-        .sidebar{
-            float:right;
-            width:30%;
-            height:100%;
-            margin-right:120px;
-            margin-top:120px;
-        }
+    @font-face {
+    font-family: 'FontAwesome';
+    src: url(font-path('fontawesome-webfont.eot') + '?v=4.4.0');
+    src: url(font-path('fontawesome-webfont.eot') + '?#iefix&v=4.4.0') format('embedded-opentype'),
+         url(font-path('fontawesome-webfont.woff2') + '?v=4.4.0') format('woff2'),
+         url(font-path('fontawesome-webfont.woff') + '?v=4.4.0') format('woff'),
+         url(font-path('fontawesome-webfont.ttf') + '?v=4.4.0') format('truetype'),
+         url(font-path('fontawesome-webfont.svg') + '?v=4.4.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
     </style>
 </head>
 <body>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text"><h2><%= link_to 'Club Yelp', posts_path %></h2></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Write a Review</a></li>
-                <li><a href="#">Find Friends</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Talk</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-                <ul class="menu">
-                <form class="form-inline">
+    
+    <body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><%= link_to 'ClubHub', posts_path %></h1>
+					<nav id="nav">
+						<ul>
+                            <li><%= link_to 'Home', posts_path %></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">User Options</a>
+								<ul>
+                                        <!--Drop-down menu not working-->
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">About Me</a></li>
+											<li><a href="#">Write A Review</a></li>
+											<li><a href="#">Find Friends</a></li>
+											<li><a href="#">Talk</a></li>
+                                            <li><a href="generic.html">Write A Review</a></li>
+									       <li><a href="contact.html">Make A New Site</a></li>
+									       <li><a href="elements.html">Elements</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+                         <form class="form-inline">
                   <div class="form-group">
                     <h6>Username</h6>
                     <input type="text" class="form-control" placeholder="Username">
@@ -52,27 +67,130 @@
                       <button type="submit" class="btn btn-default">Submit</button>
                   </div>
                 </form>
-            </ul>
-        </div>
-</div>
+					</nav>
+				</header>
+    
+    	<section id="banner">
+					<h1 style="font-size:150px">ClubHub</h1>
+					<p>Designed by &copy;Codiggers</p>
 
-<div class="callout large primary">
-    <div class="row column text-right">
-        <h1 style="font-size:150px">Club Yelp</h1>
-        <h2 class="subheader">Codiggers</h2>
-    </div>
-</div>
-    <div class="margins">
-            <div class="sidebar">
-                <h1><b>This is a side bar thing. Place cool stuff here.</b></h1>
-                
-                <p> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-    </div>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Introducing the ultimate SJSU club organization finder.</h2>
+							<p>SJSU ClubHub was designed in order to provide students at SJSU the opportunity to learn about the different student organizations on campus. </p>
+						</header>
+						<span class="image featured"><img src="http://campaign.sjsu.edu/cmsimages/SJSU-ACCEL-DM_Page_06.jpg" alt="" /></span>
+					</section>
+
+					<section class="box special features">
+                        <h1>Reviews of the day!</h1>
+						<div class="features-row">
+							<section>
+								<span class="icon major fa-bolt accent2"></span>
+								<h3>Club one</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon major fa-area-chart accent3"></span>
+								<h3>Club two</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon major fa-cloud accent4"></span>
+								<h3>Club three</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+							<section>
+								<span class="icon major fa-lock accent5"></span>
+								<h3>Club four</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+							</section>
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="6u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="http://www.swe.uc.edu/_pictures/_logos/swe_logo.jpg" alt="" /></span>
+								<h3>Society of Women Engineers</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="6u 12u(narrower)">
+
+							<section class="box special">
+								<span class="image featured"><img src="http://www.fuelyourcreativity.com/files/2009/02/logo3.png" alt="" /></span>
+								<h3>Codiggers</h3>
+								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+                    <h2>Subscribe</h2>
+
+					<form>
+						<div class="row uniform 50%">
+							<div class="8u 12u(mobilep)">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="4u 12u(mobilep)">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+
+		</div>
+
+
+
         <%= yield %>
-    </div>
+        
+        			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="www.Twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="www.Facebook.com" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="www.instagram.com" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="www.github.com" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="www.dribble.com" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="http://plus.google.com" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy;Codiggers. All rights reserved.</li>
+					</ul>
+				</footer>
+            <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+
 </body>
 </html>
