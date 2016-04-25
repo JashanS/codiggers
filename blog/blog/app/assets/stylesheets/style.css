@@ -3030,7 +3030,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xft1/v/t35.0-12/12788328_1115560065123511_189408632_o.jpg?oh=0e33619dbfe91afd63dac8f9f311c67a&oe=56D6D7A2"), url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xft1/v/t35.0-12/12788328_1115560065123511_189408632_o.jpg?oh=0e33619dbfe91afd63dac8f9f311c67a&oe=56D6D7A2");
+		background-image: url("background.jpg"), url("background.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
